@@ -12,7 +12,7 @@ import javax.swing.Timer;
 public class Model extends JPanel implements ActionListener {
 
     private Dimension d;
-    private final Font smallFont = new Font("Arial", Font.BOLD, 14);
+    private final Font smallFont = new Font("Arial", Font.ITALIC, 18);
     private boolean inGame = false;
     private boolean dying = false;
 
@@ -20,7 +20,7 @@ public class Model extends JPanel implements ActionListener {
     private final int N_BLOCKS = 15;
     private final int SCREEN_SIZE = N_BLOCKS * BLOCK_SIZE;
     private final int MAX_GHOSTS = 12;
-    private final int PACMAN_SPEED = 6;
+    private final int PACMAN_SPEED = 7;
 
     private int N_GHOSTS = 6;
     private int lives, score;
@@ -89,7 +89,7 @@ public class Model extends JPanel implements ActionListener {
         dx = new int[4];
         dy = new int[4];
 
-        timer = new Timer(40, this);
+        timer = new Timer(30, this);
         timer.start();
     }
 
